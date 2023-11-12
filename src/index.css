@@ -1,0 +1,264 @@
+
+@import url(https://db.onlinewebfonts.com/c/fd5fc4060a6e4d402fc0c45fad1f852f?family=F29LT+Zarid+Display+Regular);
+
+@font-face {
+    font-family: "F29LT Zarid Display Regular";
+    src: url("https://db.onlinewebfonts.com/t/fd5fc4060a6e4d402fc0c45fad1f852f.eot");
+    src: url("https://db.onlinewebfonts.com/t/fd5fc4060a6e4d402fc0c45fad1f852f.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/fd5fc4060a6e4d402fc0c45fad1f852f.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/fd5fc4060a6e4d402fc0c45fad1f852f.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/fd5fc4060a6e4d402fc0c45fad1f852f.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/fd5fc4060a6e4d402fc0c45fad1f852f.svg#F29LT Zarid Display Regular")format("svg");
+}
+
+
+/* Barra lateral */
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+aside {
+    display: relative;
+    position: fixed;
+    z-index: 3;
+    background-color: #f0f0f0;
+    width: 150px;
+    height: 3%;
+    color: #f0f0f0;
+    left:0;
+    top:0;
+    transition: width 0.5s;
+}
+
+#asideHeader {
+    width:100%
+}
+
+#navPreview {
+    position:absolute;
+    filter: invert(100%);
+    right: 1.4rem;
+    height: 1.5rem;
+    z-index: 2;
+}
+
+.navHContainer {
+    position: relative;
+    flex: auto;
+    align-items: center;
+    padding-top: 1.5rem;
+    height: 3rem;
+    width: 100%;
+    background-color: #276037;
+}
+
+#navProfile {
+    position: absolute;
+    float: left;
+    z-index: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 5.5rem;
+    width: 5.5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 1rem;
+    padding-left: 1.5rem;
+}
+ 
+.navPi {
+    display: inline-table;
+    position: absolute;
+    width: 100%;
+    margin-top: -15px;
+    padding-top: -15px;
+    font-family: "F29LT Zarid Display Regular";
+    opacity: 0%;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 5px;
+}
+
+.navP{
+    display: inline-table;
+    margin-top: -15px;
+    padding-top: -15px;
+    color: #f0f0f0;
+    width: 100%;
+    height: fit-content;
+    display: inline-table;
+    position:absolute;
+    text-align: center;
+    font-size: 35px;
+    font-family: "F29LT Zarid Display Regular";
+}
+
+.navContainer{
+    opacity: 0%;
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+.navCat {
+    display:flex;
+    position: left;
+    align-items: center;
+    background-color: #f0f0f0;
+    width: fit-content;
+    padding: 1rem;
+    height: 4rem;
+    overflow: hidden;
+    transition: filter 0.15s;
+}
+
+.navCat:hover {
+    background-color: #276037;
+    opacity: 67%;
+    font-weight: bold;
+}
+
+.navIcon {
+    filter: invert(100%);
+    margin: .75rem 1rem 0.6rem 0rem;
+    height: 2rem;
+}
+
+.navCat:hover .navText{
+    color: white;
+    text-shadow: 0.1rem 0.1rem 0.1rem rgb(0, 0, 0);
+}
+
+.navText {
+    font-family: "F29LT Zarid Display Regular";
+    font-size: 25px;
+    color: black;
+    width: fit-content;
+    text-shadow: 0.3rem 0.3rem 0.3rem rgb(255, 255, 255);
+    line-height: 1.0;
+    padding: 1rem;
+}
+
+.a{
+    text-decoration: none;
+    color:white;
+}
+
+aside:hover .navHContainer{
+    transition: 1.15s;
+}
+
+aside:hover .navCat{
+  width:85%;
+}
+
+aside:hover .navText{
+    padding-left: .5rem;
+}
+
+aside:hover {
+    height: 100%;
+    width: 230px;
+    box-shadow: 1px 1px 8px 1px rgba(2, 2, 19, 0.404);
+}
+
+aside:hover .navPi{
+   transition: .55s ease-in-out;
+   opacity: 100%;
+}
+
+aside:hover .navContainer{
+    height: 100%;
+    background-color: #f0f0f0;
+    opacity: 100%;
+}
+
+aside:hover .navP{
+    transition: .1s ease-in-out;
+    visibility: hidden;
+}
+
+/* Navbar */
+.bsHr{
+    width: calc(100% - 2rem);
+    height: 3.4rem;
+    display: flex;
+    border-bottom: inset 5px;
+    padding-bottom: .1rem;
+    padding-left: 2rem;
+    margin-left: 8rem;
+    margin-top: -.5rem;
+    position: sticky;
+    top: 0;
+    background-color: #276037;
+    padding-top: 1rem;
+    opacity: 89%;
+}
+
+.headerItem{
+    color: #f0f0f0;
+    font-family: "F29LT Zarid Display Regular";
+    font-size: 29px;
+    width: fit-content;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    line-height: 1.0;
+    margin-top: -7px;
+}
+
+#hrImgContainer {
+  display: flex;
+  align-items: center;
+  width: 8rem;
+  height: 4rem;
+  overflow: hidden;
+  transition: filter 0.15s;
+  margin-left: 2.3rem;
+  margin-right: -.5rem;
+  margin-top: -0.75rem;
+}
+
+#hrImgContainer2 {
+    display: flex;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+    transition: filter 0.15s;
+    margin-left: 2.3rem;
+    margin-right: -.5rem;
+
+  }
+
+.hrImg {
+  width: 4rem;
+  height: 4rem;
+  margin-right: 5rem;
+}
+
+.hrImg2 {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 15rem;
+  }
+
+
+
+#hiOwner{
+    margin-top: .45rem;
+    font-size: 25px;
+    margin-bottom: -.6rem;
+    orientation: row;
+}
+
+.headerTable{
+    margin-top: -.5rem;
+    justify-content: space-between;
+    display: inline-table;
+    height: 100%;
+    right: 0;
+    width: 100%;
+    margin-left: 1020px;
+}
