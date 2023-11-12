@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Lista from './Lista';
-import Grafica from './grafica';
+import Grafica from './Grafica';
 import { fetchDataById } from './helpers/helperDB';
 import Chatbox from './Chatbox';
 function Sucursal({ indice },{ sucursal }) {
