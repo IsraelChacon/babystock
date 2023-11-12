@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import imageSucursal from './assets/farmacy.png';
 import imageQuestion from './assets/question.png';
 import Chatbox from './Chatbox';
-import Grafica from './grafica';
+import Grafica from './Grafica';
 import { realizarSolicitudFetch } from './helpers/helperAI';
 
 const Menu = () => {
